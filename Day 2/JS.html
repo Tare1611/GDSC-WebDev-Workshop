@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Shashwat Tare
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <p>
+            <h4>Area of Triangle</h4>
+            <form>
+                <label for="side1">Enter Side 1: </label>
+                <input type="text" id="b1" placeholder="Enter base number"><br><br>
+                <label for="side1">Enter Side 2: </label>
+                <input type="text" id="b2" placeholder="Enter height number"><br><br>
+                <input type="button" value="Calculate" id="btnCalc">
+
+                <div id="result"
+                    style="width:150px; border: 1px solid #ddd;position: relative;top:50px;left:50;padding:20px">
+                </div>
+
+            </form>
+            </p>
+        </div>
+
+        <div class="column">
+            <p>
+            <h4>Leap Year Test</h4>
+            <form>
+                <label for="Year i/p">Enter Year : </label>
+                <input type="text" id="lpbtn" placeholder="Enter Year To Check"><br><br>
+                <input type="button" value="Check" id="btnCalc1">
+
+                <div id="resultlp"
+                    style="width:150px; border: 1px solid #ddd;position: relative;top:50px;left:50;padding:20px">
+
+                </div>
+            </form>
+            </p>
+        </div>
+        <div class="column">
+            <p>
+            <h4>Mini Calculator</h4>
+            <form>
+                <label for="Num1">Enter Number 1: </label>
+                <input type="text" id="num1" placeholder="Enter Value Here"><br><br>
+                <label for="Num1">Enter Number 2: </label>
+                <input type="text" id="num2" placeholder="Enter Value Here"><br><br>
+                <input type="button" value="Addition" id="btnCalc2">
+                <input type="button" value="Subtraction" id="btnCalc3"><br><br>
+                <input type="button" value="Multiplication" id="btnCalc4">
+                <input type="button" value="Division" id="btnCalc5">
+
+                <div id="minical"
+                    style="width:150px; border: 1px solid #ddd;position: relative;top:50px;left:50;padding:20px">
+
+                </div>
+            </form>
+            </p>
+        </div>
+    </div>
+    <script>
+
+        function area() {
+            var number1 = document.getElementById("b1").value;
+            var number2 = document.getElementById("b2").value;
+            var result = document.getElementById("result");
+
+            number1 = Number(number1);
+            number2 = Number(number2);
+
+            let area = number1 * number2 / 2;
+            result.innerHTML = "Area of triangle:" + area
+        }
+
+        var btnCalc = document.getElementById("btnCalc");
+        btnCalc.onclick = area;
+
+        function leap() {
+            var year = document.getElementById("lpbtn").value;
+            var resultlp = document.getElementById("resultlp");
+            year = Number(year);
+
+            let ans = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+            console.log(ans);
+            if (ans == true) {
+                resultlp.innerHTML = "The year " + year + " is a leap year."
+            }
+            else {
+                resultlp.innerHTML = "The year " + year + " is not a leap year."
+            }
+
+        }
+
+        var btnCalc = document.getElementById("btnCalc1");
+        btnCalc.onclick = leap;
+
+        function add() {
+            var add1 = document.getElementById("num1").value;
+            var add2 = document.getElementById("num2").value;
+            var result = document.getElementById("minical");
+
+            add1 = Number(add1);
+            add2 = Number(add2);
+
+            let sum = add1 + add2;
+            result.innerHTML = "Sum of " + add1 + " and " + add2 + " is " + sum + "."
+        }
+
+        var btnCalc = document.getElementById("btnCalc2");
+        btnCalc.onclick = add;
+
+        function sub() {
+            var sub1 = document.getElementById("num1").value;
+            var sub2 = document.getElementById("num2").value;
+            var result = document.getElementById("minical");
+
+            sub1 = Number(sub1);
+            sub2 = Number(sub2);
+
+            let diff = sub1 - sub2;
+            result.innerHTML = "Difference of " + sub1 + " and " + sub2 + " is " + diff + "."
+        }
+
+        var btnCalc = document.getElementById("btnCalc3");
+        btnCalc.onclick = sub;
+
+        function multi() {
+            var mul1 = document.getElementById("num1").value;
+            var mul2 = document.getElementById("num2").value;
+            var result = document.getElementById("minical");
+
+            mul1 = Number(mul1);
+            mul2 = Number(mul2);
+
+            let mul = mul1 * mul2;
+            result.innerHTML = "Multiplication of " + mul1 + " and " + mul2 + " is " + mul + "."
+        }
+
+
+        var btnCalc = document.getElementById("btnCalc4");
+        btnCalc.onclick = multi;
+
+        function div() {
+            var div1 = document.getElementById("num1").value;
+            var div2 = document.getElementById("num2").value;
+            var result = document.getElementById("minical");
+
+            div1 = Number(div1);
+            div2 = Number(div2);
+
+            let div = div1 / div2;
+            result.innerHTML = "Division of " + div1 + " and " + div2 + " is " + div + "."
+        }
+
+        var btnCalc = document.getElementById("btnCalc5");
+        btnCalc.onclick = div;
+    </script>
+</body>
+
+</html>
