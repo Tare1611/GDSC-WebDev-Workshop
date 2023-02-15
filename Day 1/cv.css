@@ -1,0 +1,146 @@
+table, td, th{
+    border: 2px solid black;
+    width: fit-content;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-color: white;
+    text-shadow: 2px -1px #000000;
+    box-shadow: #00000038 0px 0px 10px 0px;
+}
+
+article{
+    text-align: center;
+    box-shadow: inset rgb(0 0 0 / 47%) 0px 0px 20px 2px;
+    position: initial;
+    border-radius: 10px;
+    background-color: #282828;
+    padding: 25px;
+    color: white;
+    text-shadow: 2px -1px #000000;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 2000px;
+}
+
+.aboutMe{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-shadow: 2px -1px #000000;
+    font-weight: 900;
+}
+
+.projects{
+    padding: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 2px -1px #000000;
+    font-weight: 900;
+}
+
+.contactMe{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-shadow: 2px -1px #000000;
+    font-weight: 900;
+}
+
+.courses{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-shadow: 2px -1px #000000;
+    font-weight: 900;
+    text-justify: auto;
+    text-align-last: center;
+}
+
+nav{
+    margin-top: 10px;
+    line-height: normal;
+    text-align: center;
+    padding: 10px;
+    background-color: #282828;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset rgb(0 0 0 / 47%) 0px 0px 20px 2px;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+.divnav{
+    text-align: center;
+}
+
+marquee{
+    font-size: x-large;
+    color: #fff;
+    text-shadow: 2px -1px #000000;
+}
+
+ul{
+    list-style: none;
+}
+
+.profile{
+    height: 300px;
+    width: 310px;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: #00000038 0px 0px 10px 0px;
+}
+
+.nav1{
+    align-items: center;
+}
+
+.logo{
+   height: 50px; 
+   width: 50px;
+   padding: 10px;
+}
+
+footer{
+    padding: 10px;
+}
+
+.divame{
+    align-items: center;
+    display: flex;
+}
+
+a{
+    color: #fff;
+}
+.websites{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 2px -1px #000000;
+    width: 480px;
+    word-wrap: normal;
+}
