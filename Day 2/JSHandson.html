@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Handson</title> 
+    </head>
+    <body>
+        <h2>NMIMS Shirpur</h2>
+        <p id="magic">
+            This is just a placeholder for some text to appear magically using JavaScript.
+        </p>
+        
+        <form action="#" method="post">
+            <p>Enter your Email : </p>
+            <input type="text" name="email" id="email">
+            <button type="submit" name="submit" value="Submit" onclick="validateEmail()">Submit</button>
+        </form>
+      
+        <script>
+            function validateEmail(){
+                var mail;
+                var mailcheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                mail = document.getElementById("email");
+                if (mail = mailcheck)
+                {
+                    alert("Valid");
+                }
+                else{
+                    alert("Wrong email");
+                };
+            }
+
+        </script>
+    </body>
+</html>
+email validation and other was document.write
